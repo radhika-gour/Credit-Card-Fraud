@@ -17,19 +17,6 @@ credit_card_data.isnull().sum()
 
 credit_card_data['Class'].value_counts()
 
-"""This Dataset is highly unbalanced
-
-
-0 --> Normal Transaction
-
-
-
-1 --> Fraudulent Transaction
-
-"""
-
-# separating the data for analysis
-
 legit = credit_card_data[credit_card_data.Class ==0]
 fraud = credit_card_data[credit_card_data.Class ==1]
 
